@@ -1,0 +1,27 @@
+
+<div class="overlay" id="modal-login" aria-hidden="true">
+    <div class="modal" role="dialog" aria-labelledby="login-title">
+    <div class="row-between">
+    <h2 id="login-title">Đăng nhập</h2>
+    
+    </div>
+    <form id="form-login">
+    <div class="form-row">
+    <label for="login-email">Email</label>
+    <input id="login-email" name="email" type="email" placeholder="you@example.com" required>
+    </div>
+    <div class="form-row">
+    <label for="login-password">Mật khẩu</label>
+    <input id="login-password" name="password" type="password" placeholder="••••••••" required minlength="6">
+    </div>
+    <div class="form-row row-between">
+    <label class="muted small"><input type="checkbox" id="remember"> Ghi nhớ</label>
+    <a href="#" class="muted small">Quên mật khẩu?</a>
+    </div>
+    <div class="form-row">
+    <button type="submit" class="btn btn-primary" style="width:5%">Đăng nhập</button>
+    </div>
+    <div class="errors" id="login-error" role="alert" aria-live="assertive"></div>
+    </form>
+    </div>
+    </div>
