@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: inear-gradient(135deg, #06B6D4, #2563EB, #4338CA);
+  background: linear-gradient(135deg, #00c3b5, #2b6cb0, #3b1d6e);
   color: #fff;
 }
 
@@ -168,5 +168,6 @@ p:last-child {
   padding: 10px 0;
    
 }
+
 
 
