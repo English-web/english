@@ -1,4 +1,4 @@
-/* Reset */
+  
 * {
   margin: 0;
   padding: 0;
@@ -6,26 +6,19 @@
   font-family: Arial, sans-serif;
 }
 
-/* Nền tổng thể */
 body {
   background-color: #5e4b8b;
   color: #fff;
 }
 
-/* Logo góc trái */
-.logoweb img {
+ .logoweb img {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 100px; /* thu nhỏ logo */
+  width: 100px;  
   height: auto;
 }
   
-
-
-
-
-/* Đăng nhập / Đăng ký góc phải */
 #modal-login {
   position: absolute;
   top: 15px;
@@ -44,42 +37,41 @@ body {
   margin: 0;
 }
 
-/* Màu riêng cho từng link – ép không đậm */
+ 
 #modal-login a {
-  color: #00ffff; /* xanh ngọc nhạt */
+  color: #00ffff;  
   text-decoration: none;
-  font-weight: normal !important; /* ép không đậm */
+  font-weight: normal !important;  
   padding: 5px 8px;
 }
 
 #modal-register a {
-  color: #ffcc00; /* vàng nhạt */
+  color: #ffcc00;  
   text-decoration: none;
-  font-weight: normal !important; /* ép không đậm */
+  font-weight: normal !important;  
   padding: 5px 8px;
 }
 
-/* Hiệu ứng hover nhẹ */
+ 
 #modal-login a:hover {
-  color: #00b3b3; /* xanh ngọc đậm hơn khi hover */
+  color: #00b3b3;  
   text-decoration: underline;
 }
 
 #modal-register a:hover {
-  color: #cc9900; /* vàng đậm hơn khi hover */
+  color: #cc9900;  
   text-decoration: underline;
 }
 
 
-/* Thanh menu */
-ul {
+ ul {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #20c997; /* xanh ngọc */
+  background-color: #20c997;  
   padding: 15px 0;
-  margin-top: 110px; /* đẩy xuống dưới logo */
+  margin-top: 110px;  
 }
 ul li {
   margin: 0 20px;
@@ -90,24 +82,24 @@ ul li:hover {
   text-decoration: underline;
 }
 .content .slogan p {
-  background: transparent;  /* bỏ nền đen */
-  color: #fff;              /* chữ trắng */
-  margin: 0;                /* reset margin */
+  background: transparent;   
+  color: #fff;               
+  margin: 0;                 
 }
 
-/* Container slogan + hình */
+ 
 .content {
   display: flex;
-  justify-content: center;  /* căn giữa ngang */
-  align-items: center;      /* căn giữa dọc */
-  gap: 40px;                /* khoảng cách slogan – hình */
-  margin-top: 50px;        /* đẩy toàn khối xuống dưới header */
+  justify-content: center;   
+  align-items: center;       
+  gap: 40px;                 
+  margin-top: 50px;         
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Slogan bên trái */
+ 
 .content .slogan {
   flex: 1;
   font-size: 1.5rem;
@@ -116,9 +108,9 @@ ul li:hover {
   margin-left: 0px;
 }
 
-/* Hình bên phải */
+ 
 .content .main-image img {
-  width: 400px;  /* kích thước hình */
+  width: 400px;   
   height: auto;
   border-radius: 8px;
   margin-top: -20px;
@@ -126,9 +118,9 @@ ul li:hover {
 }
 
 .levels {
-  display: flex;             /* bật flex */
-  justify-content: center;   /* căn giữa hàng ngang */
-  gap: 20px;                 /* khoảng cách giữa các box */
+  display: flex;             
+  justify-content: center;    
+  gap: 20px;                 
   margin-top: 30px;
   font-size:1.3rem;
 }
@@ -152,9 +144,6 @@ ul li:hover {
   background: #17a589;
 }
 
-
-
-/* Footer */
 h4,
 h4 + a img,
 p:last-child {
@@ -173,7 +162,7 @@ a img {
 footer,
 h4,
 p:last-child {
-  background-color: #000; /* nền đen */
+  background-color: #000;  
   color: #fff;
   text-align: center;
   padding: 10px 0;
