@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #F3E8FF;
+  background-color: inear-gradient(135deg, #06B6D4, #2563EB, #4338CA);
   color: #fff;
 }
 
@@ -168,4 +168,5 @@ p:last-child {
   padding: 10px 0;
    
 }
+
 
