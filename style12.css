@@ -1,0 +1,181 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Nền tổng thể */
+body {
+  background-color: #5e4b8b;
+  color: #fff;
+}
+
+/* Logo góc trái */
+.logoweb img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px; /* thu nhỏ logo */
+  height: auto;
+}
+  
+
+
+
+
+/* Đăng nhập / Đăng ký góc phải */
+#modal-login {
+  position: absolute;
+  top: 15px;
+  right: 110px;
+}
+
+#modal-register {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+#modal-login p,
+#modal-register p {
+  display: inline-block;
+  margin: 0;
+}
+
+/* Màu riêng cho từng link – ép không đậm */
+#modal-login a {
+  color: #00ffff; /* xanh ngọc nhạt */
+  text-decoration: none;
+  font-weight: normal !important; /* ép không đậm */
+  padding: 5px 8px;
+}
+
+#modal-register a {
+  color: #ffcc00; /* vàng nhạt */
+  text-decoration: none;
+  font-weight: normal !important; /* ép không đậm */
+  padding: 5px 8px;
+}
+
+/* Hiệu ứng hover nhẹ */
+#modal-login a:hover {
+  color: #00b3b3; /* xanh ngọc đậm hơn khi hover */
+  text-decoration: underline;
+}
+
+#modal-register a:hover {
+  color: #cc9900; /* vàng đậm hơn khi hover */
+  text-decoration: underline;
+}
+
+
+/* Thanh menu */
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #20c997; /* xanh ngọc */
+  padding: 15px 0;
+  margin-top: 110px; /* đẩy xuống dưới logo */
+}
+ul li {
+  margin: 0 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+ul li:hover {
+  text-decoration: underline;
+}
+.content .slogan p {
+  background: transparent;  /* bỏ nền đen */
+  color: #fff;              /* chữ trắng */
+  margin: 0;                /* reset margin */
+}
+
+/* Container slogan + hình */
+.content {
+  display: flex;
+  justify-content: center;  /* căn giữa ngang */
+  align-items: center;      /* căn giữa dọc */
+  gap: 40px;                /* khoảng cách slogan – hình */
+  margin-top: 50px;        /* đẩy toàn khối xuống dưới header */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Slogan bên trái */
+.content .slogan {
+  flex: 1;
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 1.6;
+  margin-left: 0px;
+}
+
+/* Hình bên phải */
+.content .main-image img {
+  width: 400px;  /* kích thước hình */
+  height: auto;
+  border-radius: 8px;
+  margin-top: -20px;
+   
+}
+
+.levels {
+  display: flex;             /* bật flex */
+  justify-content: center;   /* căn giữa hàng ngang */
+  gap: 20px;                 /* khoảng cách giữa các box */
+  margin-top: 30px;
+  font-size:1.3rem;
+}
+
+.level {
+  text-align: center;
+  font-size:1.3rem;
+}
+
+.level input[type="button"] {
+  padding: 12px 20px;
+  border: none;
+  background: #20c997;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.level input[type="button"]:hover {
+  background: #17a589;
+}
+
+
+
+/* Footer */
+h4,
+h4 + a img,
+p:last-child {
+  text-align: center;
+}
+
+h4 {
+  margin-top: 40px;
+}
+
+a img {
+  display: block;
+  margin: 10px auto;
+}
+
+footer,
+h4,
+p:last-child {
+  background-color: #000; /* nền đen */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+   
+}
