@@ -7,8 +7,15 @@
 }
 
 body {
-  background: linear-gradient(135deg, #00c3b5, #2b6cb0, #3b1d6e);
-    height: 100%;
+ background: linear-gradient(135deg, #00c3b5, #2b6cb0, #3b1d6e);
+  
+  background-color: #00c3b5;
+
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
 }
 
  .logoweb img {
@@ -168,6 +175,7 @@ p:last-child {
   padding: 10px 0;
    
 }
+
 
 
 
