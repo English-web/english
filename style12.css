@@ -138,6 +138,10 @@ ul li:hover {
   color: #d9534f;  
   font-size: 18px;
 }
+.course-card h3 {
+  color: #d9534f;  
+  font-size: 18px;
+}
 
 .course-card button {
   background-color: #ff4c4c;
@@ -177,6 +181,7 @@ p:last-child {
   padding: 10px 0;
    
 }
+
 
 
 
