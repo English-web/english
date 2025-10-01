@@ -69,14 +69,15 @@ body {
   color: #333;
 }
 
-.form-row input {
-  width: 100%;
+form-row input {
+  width: 90%;        
+  display: block;
+  margin: 0 auto;    
   padding: 12px 14px;
   border: 1px solid #ddd;
   border-radius: 10px;
   font-size: 14px;
   transition: all 0.3s ease;
-}
 
 .form-row input:focus {
   border-color: #2563EB;
@@ -128,5 +129,6 @@ button.btn:hover {
 .remember-me a:hover {
   color: #4338CA;
 }
+
 
 
