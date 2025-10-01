@@ -69,14 +69,15 @@ body {
   color: #333;
 }
 
-.form-row input {
-  width: 100%;
+form-row input {
+  width: 90%;        
+  display: block;
+  margin: 0 auto;    
   padding: 12px 14px;
   border: 1px solid #ddd;
   border-radius: 10px;
   font-size: 14px;
   transition: all 0.3s ease;
-}
 
 .form-row input:focus {
   border-color: #2563EB;
@@ -103,3 +104,4 @@ button.btn:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(37,99,235,0.5);
 }
+
