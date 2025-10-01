@@ -1,33 +1,64 @@
-  <!doctype html>
+<!doctype html>
 <html lang="vi">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Website — Header with Login / Register</title>
+
 <link rel="stylesheet" href="style12.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Link Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<!-- Link Icon Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
+
+
 <body>
+  <!--navbar-->   
+  <div class="navbar navbar-expand-sm navbar-dark" style="background: linear-gradient(90deg, #1abc9c, #3498db);">
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="https://i.postimg.cc/dVRW0YFY/t-i-xu-ng-2-Photoroom.png" width="70px">
+    </a>
+    <form class="search-box d-flex " role="search">
+      <input class="form-control" type="search" placeholder="search..." aria-label="Search">
+      <i class="bi bi-search"></i>
+      </form>
 
-<div class="logoweb">
-    <img class src="https://i.postimg.cc/dVRW0YFY/t-i-xu-ng-2-Photoroom.png.png"> 
-</div>
-
-<div class="overlay" id="modal-login">
-    
-        <p><a href="login.html"> Đăng nhập </a></p>
-</div>
-<div class="overlay" id="modal-register">
-    <p><a href="register.html"> Đăng ký </a></p>
-</div>
-
-      <ul>
-         <li>Home</li>
-         <li>Vocab</li>
-         <li>Stories</li>
-         <li>News</li>
-         <li>Audio</li>
-         <li>About us</li>
+    <!-- Button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="nav">
+    <!-- Menu-left -->
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a href="#" class="menu-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="menu-link">About us</a>
+        </li>
       </ul>
+    
+
+      <!-- Menu-right -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="login.html" class="menu-link">Log in</a>
+        </li>
+        <li class="nav-item">
+          <a href="register.html" class="menu-link">Register</a>
+        </li>
+      </ul> 
+    </div>
+  
+</div>
+ <!-- Bootstrap JS (Popper + Bootstrap) -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  
+ 
       <div class="content">
         <div class="slogan">
           <p>Tiếng việt song hành – English by your side.</p>
@@ -36,6 +67,7 @@
     <img src="https://i.pinimg.com/736x/f8/82/0e/f8820ebb2945c19c13d6458aef7c8345.jpg" width="200">
   </div>
 </div>
+  
 <div> 
  <div class="quote-wrapper">
   <div class="quote-content">
@@ -57,31 +89,33 @@
 
 
 
-
 <div class="courses">
-  <div class="course-card">
+  <div class="course-card ">
+    <i class="fas fa-seedling"></i> <!-- tương tự -->
     <h3>Beginner</h3>
     <h2>Trình độ cho người mới</h2>
-    <p>Cải thiện vốn từ và ngữ pháp cho người đọc</p>
-    <button>Vào học</button>
+    <p>Start your journey english with the basics.</p>
+    <button>Vào học >> </button>
   </div>
 
-  <div class="course-card">
+  <div class="course-card ">
+    <i class="fas fa-book-open"></i> <!-- <i> ở đây để chèn icon trong các thư viện icon (như Font Awesome) -->
     <h3> Intermediate</h3>
     <h2>Trình độ trung cấp</h2>
-    <p>Nâng cao trình độ ngoại ngữ</p>
-    <button>Vào học</button>
+    <p>Build your skills and vocabulary</p>
+    <button>Vào học >> </button>
   </div>
 
-  <div class="course-card">
+  <div class="course-card ">
+    <i class="fas fa-graduation-cap"></i> <!-- tương tự -->
     <h3> Advanced</h3>
     <h2>Trình độ nâng cao</h2>
-    <p>Những bài viết với vốn từ nâng cao.</p>
-    <button>Vào học</button>
+    <p>Master academic English and explore advanced content.</p>
+    <button>Vào học >> </button>
   </div>
 </div>
 
-
+</div>
 </body>
 <footer>
     <h4>Contact</h4>
