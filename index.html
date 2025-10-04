@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="vi">
 <head>
@@ -90,32 +91,90 @@
 
 
 <div class="courses">
-  <div class="course-card ">
-    <i class="fas fa-seedling"></i> <!-- tương tự -->
-    <h3>Beginner</h3>
-    <h2>Trình độ cho người mới</h2>
-    <p>Start your journey english with the basics.</p>
-    <button>Vào học >> </button>
+  <!-- Beginner -->
+  <div class="course-card">
+    <div class="card-inner">
+      <!-- Mặt trước -->
+      <div class="card-front">
+        <i class="fas fa-seedling"></i>
+        <h3>Beginner</h3>
+        <h2>Trình độ cho người mới</h2>
+        <p>Start your journey english with the basics.</p>
+        <button class="flip-btn">Vào học >></button>
+      </div>
+      <!-- Mặt sau -->
+      <div class="card-back">
+        <h3>Chọn thể loại</h3>
+        <ul>
+          <li>📖 Truyện</li>
+          <li>🎧 Audio</li>
+          <li>📚 Tiểu thuyết</li>
+          <li>📰 News</li>
+        </ul>
+      </div>
+    </div>
   </div>
 
-  <div class="course-card ">
-    <i class="fas fa-book-open"></i> <!-- <i> ở đây để chèn icon trong các thư viện icon (như Font Awesome) -->
-    <h3> Intermediate</h3>
-    <h2>Trình độ trung cấp</h2>
-    <p>Build your skills and vocabulary</p>
-    <button>Vào học >> </button>
+  <!-- Intermediate -->
+  <div class="course-card">
+    <div class="card-inner">
+      <div class="card-front">
+        <i class="fas fa-book-open"></i>
+        <h3>Intermediate</h3>
+        <h2>Trình độ trung cấp</h2>
+        <p>Build your skills and vocabulary</p>
+        <button class="flip-btn">Vào học >></button>
+      </div>
+      <div class="card-back">
+        <h3>Chọn thể loại</h3>
+        <ul>
+          <li>📖 Truyện</li>
+          <li>🎧 Audio</li>
+          <li>📚 Tiểu thuyết</li>
+          <li>📰 News</li>
+        </ul>
+      </div>
+    </div>
   </div>
 
-  <div class="course-card ">
-    <i class="fas fa-graduation-cap"></i> <!-- tương tự -->
-    <h3> Advanced</h3>
-    <h2>Trình độ nâng cao</h2>
-    <p>Master academic English and explore advanced content.</p>
-    <button>Vào học >> </button>
+  <!-- Advanced -->
+  <div class="course-card">
+    <div class="card-inner">
+      <div class="card-front">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Advanced</h3>
+        <h2>Trình độ nâng cao</h2>
+        <p>Master academic English and explore advanced content.</p>
+        <button class="flip-btn">Vào học >></button>
+      </div>
+      <div class="card-back">
+        <h3>Chọn thể loại</h3>
+        <ul>
+          <li>📖 Truyện</li>
+          <li>🎧 Audio</li>
+          <li>📚 Tiểu thuyết</li>
+          <li>📰 News</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
+
 </div>
+<script>
+  document.querySelectorAll(".course-card").forEach(card => {
+    const button = card.querySelector(".flip-btn");
+    button.addEventListener("click", (e) => {
+      e.stopPropagation(); // tránh lật ngược ngay khi bấm
+      card.classList.toggle("flipped");
+    });
+    card.addEventListener("click", () => {
+      card.classList.remove("flipped");
+    });
+  });
+</script>
+
 </body>
 <footer>
     <h4>Contact</h4>
